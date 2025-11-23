@@ -49,7 +49,7 @@
 
 | 數據集名稱 | 數據量 | 理論方法 | 論文/連結參考 | 備註 |
 | :--- | :--- | :--- | :--- | :--- |
-| **BDE-db2** | ~531,000 | M06-2X / def2-TZVP | [Digital Discovery 2023](https://pubs.rsc.org/en/content/articlelanding/2023/dd/d2dd00104b) | 目前最大、元素覆蓋最廣 (含鹵素) |
+| **BDE-db2** | ~531,000 | M06-2X / def2-TZVP | [Digital Discovery 2023](https://pubs.rsc.org/en/content/articlelanding/2023/dd/d3dd00169e) | 目前最大、元素覆蓋最廣 (含鹵素) |
 | **BDE-db** | ~290,000 | M06-2X / def2-TZVP | [Nat. Commun. 2020](https://www.nature.com/articles/s41467-020-16201-z) | ALFABET 模型的訓練資料 |
 | **BonDNet (BDNCM)** | ~60,000 | DFT | [Chem. Sci. 2021](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc05951a) | 特色是包含**帶電分子** (-1, 0, +1) |
 
