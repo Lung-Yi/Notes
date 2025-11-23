@@ -28,7 +28,7 @@
 ### 方法精度層級
 若需自行生成額外數據，建議參考以下精度順序：
 1.  **黃金標準**：**(RO)CBS-QB3** 或 **W1w** (如 BDE261)。
-2.  **推薦 DFT**：**$\omega$B97X-D**, **CAM-B3LYP**, **M06-2X**。這類範圍分離 (Range-separated) 或混合泛函能較好地處理自由基與離域誤差。
+2.  **推薦 DFT**：**wB97X-D**, **CAM-B3LYP**, **M06-2X**。這類範圍分離 (Range-separated) 或混合泛函能較好地處理自由基與離域誤差。
 3.  **基礎 DFT**：**B3LYP**。雖然計算快，但在斷鍵反應中誤差較大（~3-5 kcal/mol），需謹慎使用。
 
 ### 零點能量 (ZPE) 與熱修正處理
@@ -51,7 +51,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **BDE-db2** | ~531,000 | M06-2X / def2-TZVP | [Digital Discovery 2023](https://pubs.rsc.org/en/content/articlelanding/2023/dd/d3dd00169e) | 目前最大、元素覆蓋最廣 (含鹵素) |
 | **BDE-db** | ~290,000 | M06-2X / def2-TZVP | [Nat. Commun. 2020](https://www.nature.com/articles/s41467-020-16201-z) | ALFABET 模型的訓練資料 |
-| **BonDNet (BDNCM)** | ~60,000 | DFT | [Chem. Sci. 2021](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc05951a) | 特色是包含**帶電分子** (-1, 0, +1) |
+| **BonDNet (BDNCM)** | ~60,000 | DFT | [Chem. Sci. 2021](https://pubs.rsc.org/en/content/articlehtml/2021/sc/d0sc05251e) | 特色是包含**帶電分子** (-1, 0, +1) |
 
 ### B. 高精度與實驗驗證集 (Validation/Benchmark Sets)
 用於評估模型在「化學精度」要求下的表現。
@@ -59,7 +59,7 @@
 | 數據集名稱 | 數據量 | 來源/方法 | 論文/連結參考 | 備註 |
 | :--- | :--- | :--- | :--- | :--- |
 | **BSE49** | 4,502 | (RO)CBS-QB3 | [Scientific Data (2021)](https://doi.org/10.1038/s41597-021-01088-2) | 純電子能量基準 |
-| **BDE261** | 261 | W1w (CCSD(T) level) | [J. Phys. Chem. A 2012](https://pubs.acs.org/doi/10.1021/jp300520r) | 極高精度理論值 |
+| **BDE261** | 261 | W1w (CCSD(T) level) | [J. Phys. Chem. A 2012](https://pubs.acs.org/doi/full/10.1021/jp302542z), [PDF](./pdf_repository/bde261_JPCA_2012.pdf)  | 極高精度理論值 |
 | **iBonD / Luo's Handbook** | ~20,000 | 實驗值 (Experimental) | [CRC Handbook](https://www.taylorfrancis.com/books/mono/10.1201/9781420007282/comprehensive-handbook-chemical-bond-energies-yu-ran-luo) | 真實世界的標準答案 (Ground Truth) |
 
 ---
